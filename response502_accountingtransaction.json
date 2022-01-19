@@ -1,0 +1,1 @@
+{"Code":null,"Message":"São obrigatórios filtros para codColigada (companyId) e Data de depreciação, pondendo  a Data ser passada em um período ($filter=date ge 'yyyy-mm-dd' and date le 'yyyy-mm-dd' ), informe-os e tente novamente.","DetailMessage":null,"HelpUrl":null,"Details":null}
