@@ -2,22 +2,22 @@
 // https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/schemas/ProjectItemsMaterialRequestsExtra_1_000.json
 
 {
-  "$schema": "https://raw.githubusercontent.com/fellipebsaraivatotvs/apistotvs/main/response200_accountingtransaction.json#",
+  "$schema": "https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/schemas/ProjectItemsMaterialRequestsExtra_1_000.json#",
   "info": {
-    "description": "Consulta de movimentação de Conta Contábil",
+    "description": "Consulta dos Itens do Pedido de Material Extra para Projetos",
     "version": "1.000",
-    "title": "Consulta de movimentação de Conta Contábil",
-    "contact": "fellipe.saraiva@totvs.com.br",
+    "title": "Itens do Pedido de Material Extra para Projetos",
+    "contact": "TribeCP.Squad.TOP.OP@totvs.com.br",
     "x-totvs": {
       "messageDocumentation": {
-        "name": "AccountingTransaction",
-        "description": "Itens de movimentação de conta",
-        "segment": "Gestão Contábil"
+        "name": "ProjectItemsMaterialRequestsExtra",
+        "description": "Itens do Pedido de Material Extra para Projetos",
+        "segment": "Construção e Projetos"
       }
     }
   },
   "definitions": {
-    "PagedProjectAccountingTransactionExtra": {
+    "PagedProjectItemsMaterialRequestsExtra": {
       "type": "object",
       "allOf": [
         {
@@ -29,14 +29,14 @@
             "items": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/PagedProjectAccountingTransactionExtra"
+                "$ref": "#/definitions/ProjectItemsMaterialRequestsExtra"
               }
             }
           }
         }
       ]
     },
-    "ProjectAccountingTransactionExtra": {
+    "ProjectItemsMaterialRequestsExtra": {
       "type": "object",
       "properties": {
         "id": {
