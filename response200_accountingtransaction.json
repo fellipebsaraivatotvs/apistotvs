@@ -2,7 +2,7 @@
 // https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/schemas/ProjectItemsMaterialRequestsExtra_1_000.json
 
 {
-  "$schema": "https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/schemas/ProjectItemsMaterialRequestsExtra_1_000.json#",
+  "$schema": "https://raw.githubusercontent.com/fellipebsaraivatotvs/apistotvs/main/response200_accountingtransaction.json#",
   "info": {
     "description": "Consulta dos Itens do Pedido de Material Extra para Projetos",
     "version": "1.000",
