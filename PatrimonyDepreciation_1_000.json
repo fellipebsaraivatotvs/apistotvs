@@ -36,7 +36,7 @@
     }
 },
 "definitions": {
-"PagedCollector": {
+"PagedPatrimonyDepreciation": {
   "type": "object",
   "allOf": [
   {
