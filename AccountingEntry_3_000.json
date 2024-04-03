@@ -1258,29 +1258,6 @@
 			}
 		},
 
-		"ListComplementaryFields": {
-			"type": "object",
-			"properties": {
-				"EntidadeCustomizada": {
-					"description":"Campos Complementares Cadastrados",
-					"type": "integer",
-					"format":"int32",
-					"x-totvs": [
-						{
-							"product": "RM",
-							"field": "EntidadeCustomizada",
-							"required": true,
-							"type": "integer",
-							"note": "Campos Complementares Cadastrados",
-							"available": true,
-							"canUpdate": false
-						}	
-					]
-				}
-				
-			}
-		},
-
 		"ListValuesCurrencies": {
 			"type": "object",
 			"properties": {
@@ -1795,15 +1772,6 @@
 					]
 				},
 
-				"complementaryFields": {
-					"description": "Informações dos campos complementares",
-					"type": "array",
-					"items": {
-						"$ref": "#/definitions/ListComplementaryFields",
-						"type": "object"
-					}
-				},
-
 				"dateUntimely": {
 					"description":"Data Extemporânea",
 					"type": "string",
@@ -2068,7 +2036,6 @@
 						}	
 					]
 				},
-					
 					
 				"value": {
 					"description":"Valor",
