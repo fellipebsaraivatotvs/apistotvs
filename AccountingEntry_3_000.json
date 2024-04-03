@@ -1258,6 +1258,29 @@
 			}
 		},
 
+		"ListComplementaryFields": {
+			"type": "object",
+			"properties": {
+				"EntidadeCustomizada": {
+					"description":"Campos Complementares Cadastrados",
+					"type": "integer",
+					"format":"int32",
+					"x-totvs": [
+						{
+							"product": "RM",
+							"field": "EntidadeCustomizada",
+							"required": true,
+							"type": "integer",
+							"note": "Campos Complementares Cadastrados",
+							"available": true,
+							"canUpdate": false
+						}	
+					]
+				}
+				
+			}
+		},
+
 		"ListValuesCurrencies": {
 			"type": "object",
 			"properties": {
@@ -1774,22 +1797,13 @@
 
 				"complementaryFields": {
 					"description": "Informações dos campos complementares",
-					"type": "string",
-					"maxLength": 100,
-					"x-totvs": [
-						{
-							"product": "RM",
-							"field": "complementaryFields",
-							"required": false,
-							"type": "varchar",
-							"length": "100",
-							"note": "Informações dos campos complementares",
-							"available": true,
-							"canUpdate": false
-						}
-					]
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ListComplementaryFields",
+						"type": "object"
+					}
 				},
-	
+
 				"dateUntimely": {
 					"description":"Data Extemporânea",
 					"type": "string",
@@ -1893,40 +1907,6 @@
 					]
 				},
 
-				"classValueIdProtheus": {
-					"description":"Classe de Valor",
-					"type": "integer",
-					"format":"int32",
-					"x-totvs": [
-						{
-							"product": "RM",
-							"field": "classValueIdProtheus",
-							"required": false,
-							"type": "integer",
-							"note": "Classe de Valor",
-							"available": true,
-							"canUpdate": false
-						}
-					]
-				}, 
-			
-				"itemIdAccountProtheus": {
-					"description":"Item Contábil",
-					"type": "integer",
-					"format":"int32",
-					"x-totvs": [
-						{
-							"product": "RM",
-							"field": "itemIdAccountProtheus",
-							"required": false,
-							"type": "integer",
-							"note": "Item Contábil",
-							"available": true,
-							"canUpdate": false
-						}
-					]
-				},
-
 				"typeClassificationRAS": {
 					"description":"Tipo da classificação da Partida para o RAS",
 					"type": "integer",
@@ -1996,25 +1976,7 @@
 						"$ref": "#/definitions/ListApportionmentBodyPost",
 						"type": "object"
 					}
-				},
-
-				"valuesCurrencies": {
-					"description": "Lista de Moedas e seus Valores.",
-					"type": "array",
-					"items": {
-						"$ref": "#/definitions/ListValuesCurrencies",
-						"type": "object"
-					}
-				},
-
-				"apportionmentValuesCurrencies": {
-					"description": "Lista de Moedas e seus Valores Rateados por Conta Gerencial.",
-					"type": "array",
-					"items": {
-						"$ref": "#/definitions/ListApportionmentValuesCurrencies",
-						"type": "object"
-					}
-				}	
+				}
 			}
 		},
 
