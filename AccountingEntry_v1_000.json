@@ -141,7 +141,7 @@
 			"content": {
 			  "application/json": {
 				"schema": {
-				  "$ref": "https://raw.githubusercontent.com/fellipebsaraivatotvs/apistotvs/main/AccountingEntry_3_000.json#/definitions/BodyPostInfo"
+				  "$ref": "https://raw.githubusercontent.com/fellipebsaraivatotvs/apistotvs/main/AccountingEntry_3_000.json#/definitions/PagedBodyAccountingEntry"
 				}
 			  }
 			},
@@ -153,7 +153,7 @@
 			  "content": {
 				"application/json": {
 				  "schema": {
-					"$ref": "https://raw.githubusercontent.com/totvs/ttalk-standard-message/AccountingEntry/v1/3_000/jsonschema/schemas/AccountingEntry_3_000.json#/definitions/PagedAccountingEntry"
+					"$ref": "https://raw.githubusercontent.com/fellipebsaraivatotvs/apistotvs/main/AccountingEntry_3_000.json#/definitions/PagedAccountingEntry"
 				  }
 				}
 			  }
