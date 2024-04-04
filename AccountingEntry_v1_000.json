@@ -141,7 +141,7 @@
 			"content": {
 			  "application/json": {
 				"schema": {
-				  "$ref": "https://raw.githubusercontent.com/fellipebsaraivatotvs/apistotvs/main/AccountingEntry_3_000.json#/definitions/PagedBodyAccountingEntry"
+				  "$ref": "https://raw.githubusercontent.com/fellipebsaraivatotvs/apistotvs/main/AccountingEntry_3_000.json#/definitions/BodyPostInfo"
 				}
 			  }
 			},
@@ -258,7 +258,7 @@
 			"content": {
 			  "application/json": {
 				"schema": {
-				  "$ref": "https://raw.githubusercontent.com/fellipebsaraivatotvs/apistotvs/main/AccountingEntry_3_000.json#/definitions/PagedBodyAccountingEntry"
+				  "$ref": "https://raw.githubusercontent.com/fellipebsaraivatotvs/apistotvs/main/AccountingEntry_3_000.json#/definitions/BodyPostInfo"
 				}
 			  }
 			},
@@ -329,7 +329,7 @@
 			"content": {
 			  "application/json": {
 				"schema": {
-				  "$ref": "https://raw.githubusercontent.com/fellipebsaraivatotvs/apistotvs/main/AccountingEntry_3_000.json#/definitions/PagedBodyAccountingEntry"
+				  "$ref": "https://raw.githubusercontent.com/fellipebsaraivatotvs/apistotvs/main/AccountingEntry_3_000.json#/definitions/BodyPostInfo"
 				}
 			  }
 			},
@@ -394,7 +394,7 @@
 			}
 		  ],
 		  "responses": {
-			"200": {
+			"204": {
 			  "description": "Operação realizada com sucesso",
 			  "content": {
 				"application/json": {}
@@ -431,7 +431,7 @@
 		  "in": "path",
 		  "description": " Identificador único do Lançamento Contábil",
 		  "required": true,
-		  "example": "1|1111|999",
+		  "example": "1/1111|999",
 		  "schema": {
 			"type": "string"
 		  },
